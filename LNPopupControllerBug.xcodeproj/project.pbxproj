@@ -13,7 +13,41 @@
 		451F971A1E7B7FB20024660F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451F97181E7B7FB20024660F /* Main.storyboard */; };
 		451F971C1E7B7FB20024660F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451F971B1E7B7FB20024660F /* Assets.xcassets */; };
 		451F971F1E7B7FB20024660F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451F971D1E7B7FB20024660F /* LaunchScreen.storyboard */; };
+		451F977C1E7B810C0024660F /* LNPopupController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451F977B1E7B81020024660F /* LNPopupController.framework */; };
+		451F977D1E7B810C0024660F /* LNPopupController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 451F977B1E7B81020024660F /* LNPopupController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		451F97811E7B81400024660F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F97801E7B81400024660F /* TableViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		451F977A1E7B81020024660F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451F97761E7B81020024660F /* LNPopupController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 39DB52E51B5823330061C589;
+			remoteInfo = LNPopupController;
+		};
+		451F977E1E7B810C0024660F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451F97761E7B81020024660F /* LNPopupController.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 39DB52E41B5823330061C589;
+			remoteInfo = LNPopupController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		451F97751E7B80D90024660F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				451F977D1E7B810C0024660F /* LNPopupController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		451F970F1E7B7FB10024660F /* LNPopupControllerBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNPopupControllerBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +58,8 @@
 		451F971B1E7B7FB20024660F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451F971E1E7B7FB20024660F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451F97201E7B7FB20024660F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451F97761E7B81020024660F /* LNPopupController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LNPopupController.xcodeproj; path = "../../Downloads/LNPopupController-master 3/LNPopupController/LNPopupController.xcodeproj"; sourceTree = "<group>"; };
+		451F97801E7B81400024660F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451F977C1E7B810C0024660F /* LNPopupController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +77,7 @@
 		451F97061E7B7FB10024660F = {
 			isa = PBXGroup;
 			children = (
+				451F97761E7B81020024660F /* LNPopupController.xcodeproj */,
 				451F97111E7B7FB10024660F /* LNPopupControllerBug */,
 				451F97101E7B7FB10024660F /* Products */,
 			);
@@ -59,12 +97,21 @@
 				451F97121E7B7FB10024660F /* AppDelegate.swift */,
 				451F97141E7B7FB10024660F /* FirstViewController.swift */,
 				451F97161E7B7FB10024660F /* SecondViewController.swift */,
+				451F97801E7B81400024660F /* TableViewController.swift */,
 				451F97181E7B7FB20024660F /* Main.storyboard */,
 				451F971B1E7B7FB20024660F /* Assets.xcassets */,
 				451F971D1E7B7FB20024660F /* LaunchScreen.storyboard */,
 				451F97201E7B7FB20024660F /* Info.plist */,
 			);
 			path = LNPopupControllerBug;
+			sourceTree = "<group>";
+		};
+		451F97771E7B81020024660F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				451F977B1E7B81020024660F /* LNPopupController.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,10 +124,12 @@
 				451F970B1E7B7FB10024660F /* Sources */,
 				451F970C1E7B7FB10024660F /* Frameworks */,
 				451F970D1E7B7FB10024660F /* Resources */,
+				451F97751E7B80D90024660F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				451F977F1E7B810C0024660F /* PBXTargetDependency */,
 			);
 			name = LNPopupControllerBug;
 			productName = LNPopupControllerBug;
@@ -114,12 +163,28 @@
 			mainGroup = 451F97061E7B7FB10024660F;
 			productRefGroup = 451F97101E7B7FB10024660F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 451F97771E7B81020024660F /* Products */;
+					ProjectRef = 451F97761E7B81020024660F /* LNPopupController.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				451F970E1E7B7FB10024660F /* LNPopupControllerBug */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		451F977B1E7B81020024660F /* LNPopupController.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LNPopupController.framework;
+			remoteRef = 451F977A1E7B81020024660F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		451F970D1E7B7FB10024660F /* Resources */ = {
@@ -142,10 +207,19 @@
 				451F97171E7B7FB10024660F /* SecondViewController.swift in Sources */,
 				451F97131E7B7FB10024660F /* AppDelegate.swift in Sources */,
 				451F97151E7B7FB10024660F /* FirstViewController.swift in Sources */,
+				451F97811E7B81400024660F /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		451F977F1E7B810C0024660F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LNPopupController;
+			targetProxy = 451F977E1E7B810C0024660F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		451F97181E7B7FB20024660F /* Main.storyboard */ = {
